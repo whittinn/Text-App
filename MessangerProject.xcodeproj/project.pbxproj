@@ -24,6 +24,7 @@
 		8C357AD727C42AF0007DA7B8 /* UIView Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C357AD627C42AF0007DA7B8 /* UIView Extensions.swift */; };
 		8C357B0C27C56785007DA7B8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C357B0B27C56785007DA7B8 /* GoogleService-Info.plist */; };
 		8C357B1027C60E30007DA7B8 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C357B0F27C60E30007DA7B8 /* DatabaseManager.swift */; };
+		8C9A7F4227C6C64C006E2438 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9A7F4127C6C64C006E2438 /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		8C357AD627C42AF0007DA7B8 /* UIView Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView Extensions.swift"; sourceTree = "<group>"; };
 		8C357B0B27C56785007DA7B8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8C357B0F27C60E30007DA7B8 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		8C9A7F4127C6C64C006E2438 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		D8411F72AF7E6A22383CA4CC /* Pods_MessangerProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessangerProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E729DD7DBD243224F5334808 /* Pods-MessangerProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessangerProject.debug.xcconfig"; path = "Target Support Files/Pods-MessangerProject/Pods-MessangerProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +117,7 @@
 				8C357ACA27C41CDD007DA7B8 /* VideoPlayerViewController.swift */,
 				8C357ACD27C41CF3007DA7B8 /* NewConversationViewController.swift */,
 				8C357AD027C41D05007DA7B8 /* ProfileViewController.swift */,
+				8C9A7F4127C6C64C006E2438 /* ChatViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				8C357AD727C42AF0007DA7B8 /* UIView Extensions.swift in Sources */,
 				8C357ACB27C41CDD007DA7B8 /* VideoPlayerViewController.swift in Sources */,
 				8C357B1027C60E30007DA7B8 /* DatabaseManager.swift in Sources */,
+				8C9A7F4227C6C64C006E2438 /* ChatViewController.swift in Sources */,
 				8C357ACE27C41CF3007DA7B8 /* NewConversationViewController.swift in Sources */,
 				8C357AC127C41C98007DA7B8 /* LoginViewController.swift in Sources */,
 				8C357AA527C40E7F007DA7B8 /* SceneDelegate.swift in Sources */,

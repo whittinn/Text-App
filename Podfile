@@ -9,4 +9,16 @@ target 'MessangerProject' do
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
 pod 'Firebase/Database'
+pod 'Firebase/Storage'
+
+  # Google sign in
+pod 'GoogleSignIn'
+
+pod 'MessageKit'
+pod 'JGProgressHUD' 
+pod 'RealmSwift' 
+pod 'SDWebImage'
+
+# Pods for Facebook
+pod 'FBSDKLoginKit'
 end

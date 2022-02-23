@@ -7,9 +7,12 @@
 
 import UIKit
 import FirebaseAuth
+import JGProgressHUD
 
 class LoginViewController: UIViewController {
 
+    private let spinner = JGProgressHUD(style: .dark)
+    
     private let imageView : UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "logo")
@@ -75,8 +78,8 @@ class LoginViewController: UIViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Register", style: .done, target: self, action: #selector(didTapRegister))
         
         registorButton.addTarget(self, action: #selector(alertUserLogin), for: .touchUpInside)
-        emailField.delegate = self
-        passwordField.delegate = self
+//        emailField.delegate = self
+//        passwordField.delegate = self
         //add subviews
         view.addSubview(scrollView)
         scrollView.addSubview(imageView)
@@ -109,9 +112,16 @@ class LoginViewController: UIViewController {
             alertUserLogin()
             return
         }
+        
+        spinner.show(in: view)
         //FireBaseloging
         FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password) {[weak self] (AuthDataResult, Error) in
             guard let strongSelf = self else {return}
+            
+            DispatchQueue.main.async {
+                strongSelf.spinner.dismiss()
+            }
+            
             guard let results = AuthDataResult,  Error == nil else {
                  print("Unable to sign in with email \(email)")
                 return
@@ -142,15 +152,15 @@ class LoginViewController: UIViewController {
 
 }
 
-extension LoginViewController : UITextFieldDelegate{
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if textField == emailField {
-            passwordField.becomeFirstResponder()
-        }else  if textField == passwordField   {
-            
-              loginButtonTapped()
-            }
-     return true
-    }
-}
+//extension LoginViewController : UITextFieldDelegate{
+//
+//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+//        if textField == emailField {
+//            passwordField.becomeFirstResponder()
+//        }else  if textField == passwordField   {
+//
+//              loginButtonTapped()
+//            }
+//     return true
+//    }
+//}

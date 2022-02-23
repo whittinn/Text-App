@@ -7,9 +7,12 @@
 
 import UIKit
 import FirebaseAuth
+import JGProgressHUD
 
 class RegisterViewController: UIViewController {
 
+    private let spinner = JGProgressHUD(style: .dark)
+    
     private let imageView : UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(systemName: "person.circle")
@@ -40,7 +43,6 @@ class RegisterViewController: UIViewController {
         field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0))
         field.leftViewMode = .always
         field.backgroundColor = .white
-        field.isSecureTextEntry = true
         return field
     }()
     
@@ -56,7 +58,6 @@ class RegisterViewController: UIViewController {
         field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0))
         field.leftViewMode = .always
         field.backgroundColor = .white
-        field.isSecureTextEntry = true
         return field
     }()
     
@@ -72,7 +73,6 @@ class RegisterViewController: UIViewController {
         field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0))
         field.leftViewMode = .always
         field.backgroundColor = .white
-        field.isSecureTextEntry = true
         return field
     }()
     
@@ -108,11 +108,10 @@ class RegisterViewController: UIViewController {
         super.viewDidLoad()
         title = "Register"
         view.backgroundColor = . yellow
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Register", style: .done, target: self, action: #selector(didTapRegister))
         
-        registerButton.addTarget(self, action: #selector(alertUserLogin), for: .touchUpInside)
-        emailField.delegate = self
-        passwordField.delegate = self
+        registerButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
+//        emailField.delegate = self
+//        passwordField.delegate = self
         //add subviews
         view.addSubview(scrollView)
         scrollView.addSubview(imageView)
@@ -161,22 +160,25 @@ class RegisterViewController: UIViewController {
               let password = passwordField.text,
               let firstName = firstNameField.text,
               let lastName = lastNameField.text,
-              !firstName.isEmpty,!lastName.isEmpty,
+              !firstName.isEmpty,
+              !lastName.isEmpty,
               !email.isEmpty,
               !password.isEmpty,
               password.count >= 6 else {
              alertUserLogin()
              return
         }
-        
+        spinner.show(in: view)
         //FireBase log in
         
         DatabaseManager.shared.userExists(with: email) { [weak self] (exists) in
             guard let strongSelf = self else {return}
-            
+            DispatchQueue.main.async {
+                strongSelf.spinner.dismiss()
+            }
             guard !exists else{
                 //User already exists
-                self?.alertUserLogin(message: "Looks like a user account for that email already exists.")
+                strongSelf.alertUserLogin(message: "Looks like a user account for that email already exists.")
                 return
             }
             FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password) {  (authResults, Error) in
@@ -187,7 +189,9 @@ class RegisterViewController: UIViewController {
                 }
                 let user = results.user
                 print("Created User : \(user)")
+                
                 DatabaseManager.shared.insertUser(with: ChatAppUser(firstName: firstName, lastName: lastName, emailAddress: email))
+               
                 strongSelf.navigationController?.dismiss(animated: true, completion: nil)
             }
             
@@ -203,28 +207,22 @@ class RegisterViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
         present(alert, animated: true, completion: nil)
     }
-    @objc func didTapRegister(){
-        let vc = RegisterViewController()
-        vc.title = "Create Account"
-        navigationController?.pushViewController(vc, animated: true)
-        
-    }
    
 
 }
 
-extension RegisterViewController : UITextFieldDelegate{
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if textField == emailField {
-            passwordField.becomeFirstResponder()
-        }else  if textField == passwordField   {
-            
-              loginButtonTapped()
-            }
-     return true
-    }
-}
+//extension RegisterViewController : UITextFieldDelegate{
+//    
+//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+//        if textField == emailField {
+//            passwordField.becomeFirstResponder()
+//        }else  if textField == passwordField   {
+//            loginButtonTapped()
+//             
+//            }
+//     return true
+//    }
+//}
 
 extension RegisterViewController : UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
