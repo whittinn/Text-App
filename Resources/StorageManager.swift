@@ -29,6 +29,10 @@ class StoreManager {
                 //failed
                 
                 completion(.failure(StorageErrors.failedToUpload))
+                     
+                
+                
+                
                 
                 return
             }
