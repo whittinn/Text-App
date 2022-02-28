@@ -190,7 +190,24 @@ class RegisterViewController: UIViewController {
                 let user = results.user
                 print("Created User : \(user)")
                 
-                DatabaseManager.shared.insertUser(with: ChatAppUser(firstName: firstName, lastName: lastName, emailAddress: email))
+                let chatUser = ChatAppUser(firstName: firstName, lastName: lastName, emailAddress: email)
+                DatabaseManager.shared.insertUser(with: chatUser, completion: {success in
+                    if success{
+                        guard let image = strongSelf.imageView.image, let data = image.pngData() else {
+                            return
+                        }
+                        let fileName = chatUser.profilePictureFileName
+                        StoreManager.shared.uploadProfilePictures(with: data, fileName: fileName) { (result) in
+                            switch result {
+                            case .success(let downloadUrl):
+                                UserDefaults.standard.setValue(downloadUrl, forKey: "profilea_picture_png")
+                                print("download")
+                            case .failure(let error):
+                                print("Storage manager error : \(error)")
+                            }
+                        }
+                    }
+                } )
                
                 strongSelf.navigationController?.dismiss(animated: true, completion: nil)
             }

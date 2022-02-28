@@ -2,6 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbauth2</string>
+	</array>
+	<key>d</key>
+	<string></string>
+	<key>CFBundleGetInfoString</key>
+	<string></string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key></key>
 	<string></string>
 	<key>CFBundleDevelopmentRegion</key>
@@ -21,11 +31,9 @@
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.357486059882-vv0ppjord0ssli6jjfaq7kr2g5jm270p</string>
+				<string>fb4903191696461077</string>
 			</array>
 		</dict>
 	</array>
@@ -77,20 +85,11 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
-    <key>CFBundleURLTypes</key>
-    <array>
-      <dict>
-      <key>CFBundleURLSchemes</key>
-      <array>
-        <string>fbAPP-ID</string>
-      </array>
-      </dict>
-    </array>
-    <key>FacebookAppID</key>
-    <string>APP-ID</string>
-    <key>FacebookClientToken</key>
-    <string>CLIENT-TOKEN</string>
-    <key>FacebookDisplayName</key>
-    <string>APP-NAME</string>
+	<key>FacebookAppID</key>
+	<string>4903191696461077</string>
+	<key>FacebookClientToken</key>
+	<string>c252a3661157ca9032ea33ab5f4f667b</string>
+	<key>FacebookDisplayName</key>
+	<string>MessangerProject</string>
 </dict>
 </plist>

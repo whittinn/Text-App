@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7E5FB9DE3D981369FA411C53 /* Pods_MessangerProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8411F72AF7E6A22383CA4CC /* Pods_MessangerProject.framework */; };
+		8C2B78B127C921FB002D4D41 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B78B027C921FB002D4D41 /* StorageManager.swift */; };
 		8C357AA327C40E7F007DA7B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C357AA227C40E7F007DA7B8 /* AppDelegate.swift */; };
 		8C357AA527C40E7F007DA7B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C357AA427C40E7F007DA7B8 /* SceneDelegate.swift */; };
 		8C357AA727C40E7F007DA7B8 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C357AA627C40E7F007DA7B8 /* ConversationsViewController.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		756FF6703816C5DBE21B0EF8 /* Pods-MessangerProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessangerProject.release.xcconfig"; path = "Target Support Files/Pods-MessangerProject/Pods-MessangerProject.release.xcconfig"; sourceTree = "<group>"; };
+		8C2B78B027C921FB002D4D41 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		8C357A9F27C40E7F007DA7B8 /* MessangerProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessangerProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C357AA227C40E7F007DA7B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C357AA427C40E7F007DA7B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				8C357AA227C40E7F007DA7B8 /* AppDelegate.swift */,
 				8C357AA427C40E7F007DA7B8 /* SceneDelegate.swift */,
 				8C357B0F27C60E30007DA7B8 /* DatabaseManager.swift */,
+				8C2B78B027C921FB002D4D41 /* StorageManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				8C357AA727C40E7F007DA7B8 /* ConversationsViewController.swift in Sources */,
 				8C357AAD27C40E7F007DA7B8 /* MessangerProject.xcdatamodeld in Sources */,
 				8C357AD127C41D05007DA7B8 /* ProfileViewController.swift in Sources */,
+				8C2B78B127C921FB002D4D41 /* StorageManager.swift in Sources */,
 				8C357AA327C40E7F007DA7B8 /* AppDelegate.swift in Sources */,
 				8C357AC827C41CC6007DA7B8 /* PhotoViewerViewController.swift in Sources */,
 				8C357AC527C41CA9007DA7B8 /* RegisterViewController.swift in Sources */,
