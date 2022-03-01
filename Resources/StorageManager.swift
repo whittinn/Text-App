@@ -54,10 +54,25 @@ class StoreManager {
         
         
     }
+    public enum StorageErrors : Error {
+        
+        case failedToUpload
+        case failedToGetDownload
+    }
+    
+    public func downloadURl(for path: String,  completion: @escaping (Result<URL,Error>)->Void){
+        
+        let reference = storage.child(path)
+        reference.downloadURL { (URL, Error) in
+            guard let url = URL, Error == nil else {
+                completion(.failure(StorageErrors.failedToGetDownload))
+                return
+            }
+            completion(.success(url))
+        }
+    }
 }
 
-public enum StorageErrors : Error {
-    
-    case failedToUpload
-    case failedToGetDownload
-}
+
+
+

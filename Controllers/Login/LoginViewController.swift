@@ -47,7 +47,7 @@ class LoginViewController: UIViewController {
         field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0))
         field.leftViewMode = .always
         field.backgroundColor = .white
-        field.isSecureTextEntry = true
+        
         return field
     }()
     
@@ -85,7 +85,7 @@ class LoginViewController: UIViewController {
         view.backgroundColor = . yellow
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Register", style: .done, target: self, action: #selector(didTapRegister))
         
-        registorButton.addTarget(self, action: #selector(alertUserLogin), for: .touchUpInside)
+        registorButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
 //        emailField.delegate = self
 //        passwordField.delegate = self
         //add subviews
@@ -200,9 +200,8 @@ extension LoginViewController : LoginButtonDelegate {
                 return
                 
             }
-            print(result)
-            return
-          
+            UserDefaults.standard.set(email, forKey: "email")
+
             
            
             
@@ -269,15 +268,4 @@ extension LoginViewController : LoginButtonDelegate {
     
 }
 
-//extension LoginViewController : UITextFieldDelegate{
-//
-//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-//        if textField == emailField {
-//            passwordField.becomeFirstResponder()
-//        }else  if textField == passwordField   {
-//
-//              loginButtonTapped()
-//            }
-//     return true
-//    }
-//}
+

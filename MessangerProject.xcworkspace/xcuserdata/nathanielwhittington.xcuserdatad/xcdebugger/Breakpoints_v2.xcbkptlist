@@ -279,95 +279,95 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2F171581-81C2-4A89-8739-8644B48E83F2"
-            shouldBeEnabled = "Yes"
+            uuid = "52F640FC-4E5D-4E80-AC33-C47F62B60FBE"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controllers/Login/LoginViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "183"
-            endingLineNumber = "183"
-            landmarkName = "loginButton(_:didCompleteWith:error:)"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "loginButtonTapped()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4CF83E50-3F9B-478F-9BFE-68CCEA107C72"
+            uuid = "CB9E0DCA-A74F-4BA4-93CF-AE136C098E59"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Controllers/Login/LoginViewController.swift"
+            filePath = "Controllers/ProfileViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "191"
-            endingLineNumber = "191"
-            landmarkName = "loginButton(_:didCompleteWith:error:)"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "downloadImage(imageView:url:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "14DB7F48-1D34-4EEC-9381-54C9E50AE7DF"
+            uuid = "5E1FC4D8-F368-4E86-B24C-63DD57B857E8"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Controllers/Login/LoginViewController.swift"
+            filePath = "Controllers/ProfileViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "197"
-            endingLineNumber = "197"
-            landmarkName = "loginButton(_:didCompleteWith:error:)"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "createTableHeader()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B6DB5DBE-6CC9-41EF-9A63-6D0C9CFC8496"
+            uuid = "AA13F85D-AECB-46BE-8151-AD03911EB117"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Controllers/Login/LoginViewController.swift"
+            filePath = "Controllers/ProfileViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "209"
-            endingLineNumber = "209"
-            landmarkName = "loginButton(_:didCompleteWith:error:)"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "downloadImage(imageView:url:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "B6DB5DBE-6CC9-41EF-9A63-6D0C9CFC8496 - 243389d772597410"
+                  uuid = "AA13F85D-AECB-46BE-8151-AD03911EB117 - 146f35d8f555e49a"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;__C.FBSDKGraphRequestConnecting&gt;, Swift.Optional&lt;Any&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MessangerProject.LoginViewController.loginButton(_: __C.FBSDKLoginButton, didCompleteWith: Swift.Optional&lt;__C.FBSDKLoginManagerLoginResult&gt;, error: Swift.Optional&lt;Swift.Error&gt;) -&gt; ()"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MessangerProject.ProfileViewController.downloadImage(imageView: __C.UIImageView, url: Foundation.URL) -&gt; ()"
                   moduleName = "MessangerProject"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nathanielwhittington/Desktop/Apolis%20Projects/MessangerProject/Controllers/Login/LoginViewController.swift"
+                  urlString = "file:///Users/nathanielwhittington/Desktop/Apolis%20Projects/MessangerProject/Controllers/ProfileViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "207"
-                  endingLineNumber = "207"
-                  offsetFromSymbolStart = "2460">
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "442">
                </Location>
                <Location
-                  uuid = "B6DB5DBE-6CC9-41EF-9A63-6D0C9CFC8496 - f3e44892d17d2d95"
+                  uuid = "AA13F85D-AECB-46BE-8151-AD03911EB117 - d7e30dabf9747bfb"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Bool) -&gt; () in closure #1 (Swift.Optional&lt;__C.FBSDKGraphRequestConnecting&gt;, Swift.Optional&lt;Any&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MessangerProject.LoginViewController.loginButton(_: __C.FBSDKLoginButton, didCompleteWith: Swift.Optional&lt;__C.FBSDKLoginManagerLoginResult&gt;, error: Swift.Optional&lt;Swift.Error&gt;) -&gt; ()"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MessangerProject.ProfileViewController.downloadImage(imageView: __C.UIImageView, url: Foundation.URL) -&gt; ()"
                   moduleName = "MessangerProject"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nathanielwhittington/Desktop/Apolis%20Projects/MessangerProject/Controllers/Login/LoginViewController.swift"
+                  urlString = "file:///Users/nathanielwhittington/Desktop/Apolis%20Projects/MessangerProject/Controllers/ProfileViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "207"
-                  endingLineNumber = "207"
-                  offsetFromSymbolStart = "298">
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "53">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -375,113 +375,65 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "839CEA28-D027-4D53-9981-C198AD05E897"
+            uuid = "F9B74CB5-E399-44A7-A70D-3BC927481372"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Controllers/Login/LoginViewController.swift"
+            filePath = "Resources/StorageManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "212"
-            endingLineNumber = "212"
-            landmarkName = "loginButton(_:didCompleteWith:error:)"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "downloadURl(for:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "82014A90-BDC8-41E9-B7C7-E81F2B998CA9"
+            uuid = "222FBDB3-C907-42F4-97A7-2B7DBA306FA9"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Controllers/Login/LoginViewController.swift"
+            filePath = "Resources/StorageManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "210"
-            endingLineNumber = "210"
-            landmarkName = "loginButton(_:didCompleteWith:error:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3C3E583F-859E-4B81-ADE4-FDC9712C9006"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Controllers/Login/LoginViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "251"
-            endingLineNumber = "251"
-            landmarkName = "loginButton(_:didCompleteWith:error:)"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "downloadURl(for:completion:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "3C3E583F-859E-4B81-ADE4-FDC9712C9006 - 243389d772594ae8"
+                  uuid = "222FBDB3-C907-42F4-97A7-2B7DBA306FA9 - fa2f690d230ec462"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;__C.FBSDKGraphRequestConnecting&gt;, Swift.Optional&lt;Any&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MessangerProject.LoginViewController.loginButton(_: __C.FBSDKLoginButton, didCompleteWith: Swift.Optional&lt;__C.FBSDKLoginManagerLoginResult&gt;, error: Swift.Optional&lt;Swift.Error&gt;) -&gt; ()"
+                  symbolName = "MessangerProject.StoreManager.downloadURl(for: Swift.String, completion: (Swift.Result&lt;Foundation.URL, Swift.Error&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "MessangerProject"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nathanielwhittington/Desktop/Apolis%20Projects/MessangerProject/Controllers/Login/LoginViewController.swift"
+                  urlString = "file:///Users/nathanielwhittington/Desktop/Apolis%20Projects/MessangerProject/Resources/StorageManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "215"
-                  endingLineNumber = "215"
-                  offsetFromSymbolStart = "2873">
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "295">
                </Location>
                <Location
-                  uuid = "3C3E583F-859E-4B81-ADE4-FDC9712C9006 - 995ef582dbe47bc9"
+                  uuid = "222FBDB3-C907-42F4-97A7-2B7DBA306FA9 - 481c6b58fff5abcd"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FBSDKGraphRequestConnecting&gt;, Swift.Optional&lt;Any&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MessangerProject.LoginViewController.loginButton(_: __C.FBSDKLoginButton, didCompleteWith: Swift.Optional&lt;__C.FBSDKLoginManagerLoginResult&gt;, error: Swift.Optional&lt;Swift.Error&gt;) -&gt; ()"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.URL&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MessangerProject.StoreManager.downloadURl(for: Swift.String, completion: (Swift.Result&lt;Foundation.URL, Swift.Error&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "MessangerProject"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nathanielwhittington/Desktop/Apolis%20Projects/MessangerProject/Controllers/Login/LoginViewController.swift"
+                  urlString = "file:///Users/nathanielwhittington/Desktop/Apolis%20Projects/MessangerProject/Resources/StorageManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "215"
-                  endingLineNumber = "215"
-                  offsetFromSymbolStart = "262">
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "252">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E89290E0-A5B2-43AF-9E0F-0BCF95705018"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Controllers/Login/LoginViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "254"
-            endingLineNumber = "254"
-            landmarkName = "loginButton(_:didCompleteWith:error:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "34FE2899-C8CB-4DD1-96AA-C3E811F3A298"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Controllers/Login/LoginViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "261"
-            endingLineNumber = "261"
-            landmarkName = "loginButton(_:didCompleteWith:error:)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
